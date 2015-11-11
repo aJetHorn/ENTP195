@@ -3,7 +3,7 @@ body{
   margin: 0;
 }
 #topDivBackground{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../wuTang.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(wuTang.jpg);
   -webkit-filter: blur(2px);
   -moz-filter: blur(2px);
   -o-filter: blur(2px);
@@ -114,7 +114,7 @@ body{
   background-size: 100% 100%;
   background-position: center;
       background-attachment: fixed;
-  background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../theGame.jpg) no-repeat #95a5a6;
+  background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(theGame.jpg) no-repeat #95a5a6;
   border-bottom: 1px solid #000;
   color: #f1c40f;
   font-size: 2em;
