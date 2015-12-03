@@ -13,19 +13,20 @@
 </head>
 <body>
   <div id="homeTopDiv">
-    <a href="index.html" style="font-size: 1.2em; color:#f1c40f;">Number <i>Runner</i></a>
-    <div style="float:right; color: #95a5a6" id="topSpan"><a href="home.html"> Tim O'Hearn </a> | <a href="home.html" id="addFunds">Add Funds</a> | <a href="/" id="logout">Logout</a> </div>
+    <a href="ls
+    index.html" style="font-size: 1.2em; color:#f1c40f;">Number <i>Runner</i></a>
+    <div style="float:right; color: #95a5a6" id="topSpan"><a href="home.html"> Tim O'Hearn </a> | <a href="" id="amt" > $0.12 </a> | <a href="" id="addFunds" onclick="return false;">Add Funds</a> | <a href="/" id="logout">Logout</a> </div>
   </div>
   <div id="theGame">
     <div style="padding: 40px;">
     Featured Line:<br><br>
-    Will <i>The Documentary II</i> be certified Gold by the end of 2015?
+    Will <i>Kanye West</i> release an album in 2015?
     <br>
-    <div id="button2"><button type="button"><b>View</b></button></div>
+    <div id="button2"><button type="button"><b>View Details</b></button></div>
   </div>
   </div>
   <div id="leftColumn" class="col" style="float: left; width: 49%;"><span id="lch"> Open Bets </span>
-    <div class="item">Kanye West releases an album in 2015 (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
+    <div class="item">The Documentary II certified gold by Jan 2016 (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
     <div class="item">Hip Hop Movie released in 2016 grosses over $100mm (Amount: $2) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
     <div class="item">Meek Mill and Nicki Minaj break up by March 2016 (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
     <div class="item">A rapper with over 5m record sales is sentenced to over 25yrs (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
@@ -38,5 +39,32 @@
   <div class="item">Jerry won a bet against John (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
   <div class="item">Jerry won another bet against John (Amount: $1) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div>
   <div class="item">Tim won a bet (Amount: $10) <div class="viewButton" style="display: inline; float: right;"><b>View</b></div></div></div>
+  <div id="hiddenPopup" style="display: none;">
+    <h3 style="text-align: center;">Will Kanye West Release an Album in 2015?</h3>
+    <br>
+    Type of bet: Peer to Peer <br>
+    Proposed Odds: 1000:1<br>
+    Bet Amount: $10, fixed, multi<br>
+    Participants: 0 <br> 
+    Bet Host: Emmanuel Lai <br>
+    Sponsored bet: Yes <br>
+    Artist-Approved bet: No <br>
+      <p>
+    Description: Bet $10 versus Emmanuel Lai's $ .01. If Kanye West releases an album by 11:59PM EST time on December 31st, Emmanuel wins your $10. Otherwise, you win $.01.
+    
+    </p>
+    
+    <input type="button" id="button4" value="Place Bet" style="margin-top:-100px">
+  </div>
+
+  <div id="addFundsBox" style="display: none;">
+    <b> Add Funds </b><br><br>
+    Credit Card Number: <input type="text" value="****" size="2"> <input type="text" value="****" size="2"> <input type="text" value="****" size="2"> <input type="text" value="****" size="2"><br><br>
+    Confirm Security Code: <input type="text" placeholder="xxx" size="4"> <br><br>
+    Enter Amount: <input type="text"  placeholder="$xx.yy" size="9"><br><br><br><br>
+    <input type="button" id="button5" value="Add Funds">
+  </div>
+
+
 </body>
 </html>

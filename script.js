@@ -84,12 +84,28 @@ var dialog, form,
       event.preventDefault();
       addUser();
     });
+    $("#button2 button").on("click", function(){
+      //alert("Tim O'Hearn");
+      $("#hiddenPopup").toggle();
+      $("#hiddenPopup").draggable();
+    });
+    $("#button4").on("click", function(){
+      alert("Fees: 5% of total amount will be removed from payout.");
+      $("#hiddenPopup").toggle();
+    });
+
 $("#button button").on("click", function(){
   //alert("clicked");
   dialog.dialog("open");
   $(".ui-dialog").css("zIndex", 99999999);
 });
 $("#addFunds").on("click", function(){
-  alert("yo");
+  $("#addFundsBox").toggle();
+  $("#addFundsBox").draggable();
 });
+    $("#button5").on("click", function(){
+      alert("Deposit of $10.00 approved");
+      $("#addFundsBox").toggle();
+      $("#amt").text("$10.12");
+    });
 });
